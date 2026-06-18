@@ -1,54 +1,26 @@
 # W3CS
 
-Personal website and engineering portfolio for **WECS** — *Wannabe Engineer Colin Seppi*.
+Static WECS Engineering portfolio site for Cloudflare Pages.
 
-## Current structure
+## Structure
 
 ```text
 W3CS/
 ├── index.html
+├── projects.html
+├── hexapod.html
+├── about.html
+├── contact.html
 ├── styles.css
 ├── script.js
-├── assets/
-│   └── .gitkeep
-├── .gitignore
-└── README.md
+└── assets/
+    ├── wecs-crown.svg
+    └── .gitkeep
 ```
 
-## Content
+## Notes
 
-The site currently contains:
-
-- a dark WECS landing page
-- a gold crown / WECS hero section
-- a particle background
-- the slogan **STRIVE BEYOND AVERAGE**
-- a first project card for the Hexapod prototype
-- a small About section
-
-## Local preview
-
-Open `index.html` directly in a browser.
-
-For cleaner testing, use a local server:
-
-```bash
-python -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
-
-## Deployment idea
-
-This project is static, so it can be deployed with:
-
-- GitHub Pages
-- Netlify
-- Vercel
-- Cloudflare Pages
-
-For `w3cs.ch`, the clean route is GitHub repository + static host + custom domain DNS setup.
+- Layout imported from the WECS portfolio v8 package.
+- Typography keeps the current WECS font setup: Orbitron for major titles and Inter for body/UI text.
+- Color palette is the current red WECS theme.
+- Deploys as a static site through Cloudflare Pages from the `main` branch.
