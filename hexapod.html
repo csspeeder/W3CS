@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WECS Engineering Hexapod Robot project detail page." />
+  <meta name="theme-color" content="#050505" />
+  <title>Hexapod Robot — WECS Engineering</title>
+  <link rel="icon" href="assets/wecs-crown.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10" />
+</head>
+<body>
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="background-orbit" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="WECS home">
+      <svg class="brand-mark" viewBox="0 0 160 160" aria-hidden="true" focusable="false">
+        <rect x="4" y="4" width="152" height="152" rx="36" />
+        <path class="crown-main" d="M32 101L42 55L65 82L80 40L95 82L118 55L128 101H32Z" />
+        <path class="crown-base" d="M32 101H128L120 119H40L32 101Z" />
+        <path class="crown-line" d="M42 55L65 82L80 40L95 82L118 55" />
+        <circle class="crown-dot" cx="42" cy="55" r="7" />
+        <circle class="crown-dot" cx="80" cy="40" r="7" />
+        <circle class="crown-dot" cx="118" cy="55" r="7" />
+      </svg>
+      <span>WECS</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-pad detail-hero">
+      <div class="detail-hero-copy">
+        <p class="eyebrow reveal">Project Case Study</p>
+        <h1 class="page-title detail-title reveal delay-1">Hexapod Robot</h1>
+        <p class="page-intro reveal delay-2">A six-legged robotic prototype built around custom 3D-printed mechanics, 18 servo actuators, inverse kinematics and embedded control.</p>
+        <div class="contact-actions reveal delay-2">
+          <a class="button secondary" href="projects.html">Back to Projects</a>
+        </div>
+      </div>
+      <div class="detail-hero-image reveal delay-1">
+        <div class="hexapod-visual" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <section class="section-pad detail-grid">
+      <article class="detail-card reveal">
+        <p class="eyebrow">Goal</p>
+        <h2>Build a functional walking platform.</h2>
+        <p>The aim was not a static CAD model. The robot had to move as a real mechanical system: six legs, three degrees of freedom per leg, controlled gait patterns and enough structural stiffness to survive testing.</p>
+      </article>
+
+      <article class="detail-card reveal delay-1">
+        <p class="eyebrow">Mechanical Design</p>
+        <h2>3D-printed structure with modular legs.</h2>
+        <p>The platform uses printed body and leg components with separate coxa, femur and tibia segments. The geometry was designed around reach, ground clearance, servo placement and printable part strength.</p>
+      </article>
+
+      <article class="detail-card reveal">
+        <p class="eyebrow">Control</p>
+        <h2>Inverse kinematics and gait logic.</h2>
+        <p>Each foot position is converted into joint angles through inverse kinematics. Tripod, ripple and wave-style movement concepts can be tested as different compromises between speed, stability and smoothness.</p>
+      </article>
+
+      <article class="detail-card reveal delay-1">
+        <p class="eyebrow">System</p>
+        <h2>Hardware, power and iteration.</h2>
+        <p>The prototype combines embedded control, servo actuation, battery power and a custom control workflow. The difficult part is not one component; it is making mechanics, electronics and software behave as one system.</p>
+      </article>
+    </section>
+
+    <section class="section-pad spec-section">
+      <div class="spec-card reveal">
+        <p class="eyebrow">Technical Snapshot</p>
+        <ul class="spec-list">
+          <li><span>Leg layout</span><strong>6 legs · 3 DOF each</strong></li>
+          <li><span>Actuation</span><strong>18 servo motors</strong></li>
+          <li><span>Control</span><strong>ESP32-based embedded control</strong></li>
+          <li><span>Software</span><strong>Inverse kinematics + gait generation</strong></li>
+          <li><span>Manufacturing</span><strong>3D-printed mechanical structure</strong></li>
+          <li><span>Project type</span><strong>Robotics prototype</strong></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> WECS Engineering</span>
+    <span>Static portfolio</span>
+  </footer>
+
+  <script src="script.js?v=10"></script>
+</body>
+</html>
