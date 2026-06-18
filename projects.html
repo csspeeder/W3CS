@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WECS Engineering projects." />
+  <meta name="theme-color" content="#050505" />
+  <title>Projects — WECS Engineering</title>
+  <link rel="icon" href="assets/wecs-crown.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10" />
+</head>
+<body>
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="background-orbit" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="WECS home">
+      <svg class="brand-mark" viewBox="0 0 160 160" aria-hidden="true" focusable="false">
+        <rect x="4" y="4" width="152" height="152" rx="36" />
+        <path class="crown-main" d="M32 101L42 55L65 82L80 40L95 82L118 55L128 101H32Z" />
+        <path class="crown-base" d="M32 101H128L120 119H40L32 101Z" />
+        <path class="crown-line" d="M42 55L65 82L80 40L95 82L118 55" />
+        <circle class="crown-dot" cx="42" cy="55" r="7" />
+        <circle class="crown-dot" cx="80" cy="40" r="7" />
+        <circle class="crown-dot" cx="118" cy="55" r="7" />
+      </svg>
+      <span>WECS</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="projects-page-main">
+    <section class="projects-title-screen" aria-label="Projects intro">
+      <h1 class="projects-main-title reveal reveal-rise">Projects</h1>
+    </section>
+
+    <section class="projects-slogan-screen" aria-label="WECS project slogan">
+      <div class="stacked-slogan" aria-label="Strive Beyond Average">
+        <span class="reveal reveal-word delay-0">Strive</span>
+        <span class="reveal reveal-word delay-1">Beyond</span>
+        <span class="reveal reveal-word delay-2">Average</span>
+      </div>
+    </section>
+
+    <section class="projects-card-screen" id="projects-showcase" aria-label="Project selection">
+      <div class="project-grid single-project-grid centered-project-grid">
+        <a class="project-card project-link hexapod-feature-card reveal reveal-card" href="hexapod.html" aria-label="Open Hexapod Robot project details">
+          <div class="project-image-wrap">
+            <div class="hexapod-visual" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">Robotics · Embedded Control</p>
+            <h2>Hexapod Robot</h2>
+            <p>Six-legged robotic platform with 3DOF legs, inverse kinematics, custom 3D-printed mechanics and servo-based control.</p>
+            <div class="tags"><span>ESP32</span><span>IK</span><span>Servos</span><span>3D Printing</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> WECS Engineering</span>
+    <span>Static portfolio</span>
+  </footer>
+
+  <script src="script.js?v=10"></script>
+</body>
+</html>
