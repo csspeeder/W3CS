@@ -44,7 +44,7 @@ function drawParticles() {
 
     ctx.beginPath();
     ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(214, 168, 79, ${particle.alpha})`;
+    ctx.fillStyle = `rgba(255, 48, 79, ${particle.alpha})`;
     ctx.fill();
   }
 
@@ -60,7 +60,7 @@ function drawParticles() {
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
-        ctx.strokeStyle = `rgba(214, 168, 79, ${(1 - distance / 130) * 0.11})`;
+        ctx.strokeStyle = `rgba(255, 48, 79, ${(1 - distance / 130) * 0.13})`;
         ctx.lineWidth = 1;
         ctx.stroke();
       }
