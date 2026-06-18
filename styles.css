@@ -2,11 +2,11 @@
   --bg: #040404;
   --panel: rgba(255, 255, 255, 0.055);
   --panel-strong: rgba(255, 255, 255, 0.095);
-  --gold: #d6a84f;
-  --gold-bright: #f2d487;
-  --text: #f6f1e7;
-  --muted: #a8a197;
-  --border: rgba(214, 168, 79, 0.22);
+  --gold: #b00020;
+  --gold-bright: #ff304f;
+  --text: #fff1f3;
+  --muted: #b89ca2;
+  --border: rgba(255, 48, 79, 0.28);
 }
 
 * {
@@ -25,9 +25,9 @@ body {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 30% 10%, rgba(214, 168, 79, 0.14), transparent 30%),
-    radial-gradient(circle at 80% 70%, rgba(214, 168, 79, 0.08), transparent 26%),
-    linear-gradient(180deg, #030303 0%, #080705 45%, #030303 100%);
+    radial-gradient(circle at 30% 10%, rgba(255, 48, 79, 0.18), transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(176, 0, 32, 0.16), transparent 26%),
+    linear-gradient(180deg, #030303 0%, #120006 45%, #030303 100%);
   overflow-x: hidden;
 }
 
@@ -36,8 +36,8 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(255, 48, 79, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 48, 79, 0.035) 1px, transparent 1px);
   background-size: 54px 54px;
   mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
   z-index: 1;
@@ -89,7 +89,7 @@ body::before {
   display: flex;
   gap: clamp(16px, 3vw, 40px);
   padding: 14px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 48, 79, 0.16);
   border-radius: 999px;
   background: rgba(5, 5, 5, 0.5);
   backdrop-filter: blur(12px);
@@ -130,7 +130,7 @@ body::before {
 .hero-crown {
   width: min(62vw, 520px);
   fill: var(--gold);
-  filter: drop-shadow(0 18px 52px rgba(214, 168, 79, 0.16));
+  filter: drop-shadow(0 18px 52px rgba(255, 48, 79, 0.22));
   animation: crownIntro 2.6s cubic-bezier(.2, .9, .2, 1) forwards;
 }
 
@@ -181,7 +181,7 @@ h1 {
   color: var(--text);
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0 0 34px rgba(214, 168, 79, 0.08);
+  text-shadow: 0 0 34px rgba(255, 48, 79, 0.16);
 }
 
 .projects-section {
@@ -217,8 +217,8 @@ h1 {
   padding: clamp(28px, 5vw, 54px);
   border: 1px solid var(--border);
   border-radius: 34px;
-  background: linear-gradient(145deg, var(--panel-strong), rgba(0, 0, 0, 0.34));
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(145deg, var(--panel-strong), rgba(20, 0, 8, 0.38));
+  box-shadow: 0 30px 90px rgba(176, 0, 32, 0.16);
   backdrop-filter: blur(18px);
 }
 
@@ -254,7 +254,7 @@ h1 {
   max-width: 860px;
   padding: clamp(32px, 6vw, 64px);
   border-left: 2px solid var(--gold);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(176, 0, 32, 0.08);
 }
 
 .reveal {
