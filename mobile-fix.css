@@ -1,0 +1,33 @@
+@media (max-width: 520px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .projects-title-screen,
+  .projects-slogan-screen,
+  .projects-card-screen {
+    width: min(100% - 24px, 1120px);
+    overflow: hidden;
+  }
+
+  .projects-main-title {
+    font-size: clamp(3.05rem, 17vw, 5.2rem);
+    letter-spacing: -0.045em;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+
+  .stacked-slogan {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stacked-slogan span {
+    font-size: clamp(2.45rem, 14.8vw, 4.55rem);
+    letter-spacing: -0.035em;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+}
