@@ -12,22 +12,36 @@
   }
 
   .projects-main-title {
-    font-size: clamp(3.05rem, 17vw, 5.2rem);
-    letter-spacing: -0.045em;
-    max-width: 100%;
+    font-size: clamp(2.15rem, 11.2vw, 3.05rem);
+    letter-spacing: -0.035em;
+    max-width: calc(100vw - 44px);
     white-space: nowrap;
-  }
-
-  .stacked-slogan {
-    width: 100%;
-    align-items: center;
     text-align: center;
   }
 
+  .stacked-slogan {
+    width: fit-content;
+    max-width: calc(100vw - 48px);
+    margin-inline: auto;
+    align-items: flex-start;
+    text-align: left;
+  }
+
   .stacked-slogan span {
-    font-size: clamp(2.45rem, 14.8vw, 4.55rem);
+    font-size: clamp(2.35rem, 14.2vw, 4.45rem);
     letter-spacing: -0.035em;
     max-width: 100%;
     white-space: nowrap;
+    text-align: left;
+  }
+}
+
+@media (max-width: 390px) {
+  .projects-main-title {
+    font-size: clamp(2rem, 10.4vw, 2.75rem);
+  }
+
+  .stacked-slogan span {
+    font-size: clamp(2.2rem, 13.6vw, 4.1rem);
   }
 }
